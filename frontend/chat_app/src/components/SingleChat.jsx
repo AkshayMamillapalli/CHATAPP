@@ -14,7 +14,7 @@ import Lottie from "lottie-react";
 import animationData from "../animations/typing.json";
 import GroupProfile from './files/GroupProfile';
 
-const ENDPOINT = "http://localhost:3000";
+const ENDPOINT = window.location.origin;
 var socket, selectedChatCompare;
 
 function SingleChat({fetchAgain, setFetchAgain}) {

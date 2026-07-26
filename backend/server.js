@@ -24,7 +24,7 @@ app.use("/api/message", messageRoutes);
 app.use("/api/admin", adminRoutes);
 
 const __dirname1 = path.resolve();
-
+console.log("NODE_ENV =", process.env.NODE_ENV);
 if (process.env.NODE_ENV === "production") {
     const frontendPath = path.join(__dirname1, "../frontend/chat_app/dist");
 
