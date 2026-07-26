@@ -1,0 +1,146 @@
+.MyChats{
+    width: 30%;
+    min-width: 320px;
+    height: 100%;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.MyChats > div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f2937;
+    background: #ffffff;
+}
+
+
+.MyChats button{
+    background: #14b8a6;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .25s;
+}
+
+.MyChats button:hover{
+    background: #0f766e;
+}
+
+
+.Chats{
+    flex: 1;
+    overflow: hidden;
+    padding: 15px;
+}
+
+
+.chat-profiles{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+
+.chat-profiles::-webkit-scrollbar{
+    width: 6px;
+}
+
+.chat-profiles::-webkit-scrollbar-thumb{
+    background: #d1d5db;
+    border-radius: 10px;
+}
+
+
+.indivi-chats{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 16px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all .25s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+
+
+.indivi-chats:hover{
+    background: #f0fdfa;
+    border-color: #14b8a6;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(20,184,166,.15);
+}
+
+
+.selected-chat{
+    background: #14b8a6;
+    border-color: #14b8a6;
+}
+
+.selected-chat h3,
+.selected-chat p{
+    color: white;
+}
+
+.selected-chat .chat-avatar{
+    background: white;
+    color: #14b8a6;
+}
+
+
+.chat-avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #14b8a6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+
+.chat-info{
+    flex: 1;
+}
+
+.chat-info h3{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.chat-info p{
+    margin-top: 4px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+.indivi-chats h3{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: inherit;
+}

@@ -1,0 +1,153 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    animation: popup 0.25s ease;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+.usersInGrp {
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.modal form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.modal input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.modal input:focus {
+    border-color: #38b2ac;
+    box-shadow: 0 0 0 3px rgba(56, 178, 172, 0.2);
+}
+
+.modal button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.modal form button {
+    background: #38b2ac;
+    color: white;
+}
+
+.modal form button:hover {
+    background: #2f9e97;
+}
+
+.modal > button {
+    width: 100%;
+    margin-top: 15px;
+    background: #6c757d;
+    color: white;
+}
+
+.modal > button:hover {
+    background: #5b636a;
+}
+
+.modal div:last-child button {
+    width: 100%;
+    margin-top: 12px;
+    background: #e53e3e;
+    color: white;
+}
+
+.modal div:last-child button:hover {
+    background: #c53030;
+}
+
+.modal .user-result {
+    margin-top: 8px;
+}
+
+.usersInGrp::-webkit-scrollbar {
+    width: 6px;
+}
+
+.usersInGrp::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+    border-radius: 10px;
+}
+
+.usersInGrp::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+.update-btn{
+    width:46px;
+    height:46px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#edf2f7;
+    color:#2d3748;
+
+    border:none;
+    border-radius:50%;
+
+    font-size:20px;
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.update-btn:hover{
+    background:#dce7f1;
+}
+
+.update-btn:active{
+    transform:translateY(0);
+    box-shadow:none;
+}

@@ -1,0 +1,11 @@
+.ChatBox{
+    flex:1;
+    height:100%;
+    display:flex;
+}
+
+.cont{
+    flex:1;
+    display:flex;
+    height:100%;
+}
