@@ -26,12 +26,12 @@ app.use("/api/admin", adminRoutes);
 const __dirname1 = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname1, "../frontend/chat_app/dist")));
+    const frontendPath = path.join(__dirname1, "../frontend/chat_app/dist");
 
-    app.get("*", (req, res) => {
-        res.sendFile(
-            path.join(__dirname1, "../frontend/chat_app/dist/index.html")
-        );
+    app.use(express.static(frontendPath));
+
+    app.get(/.*/, (req, res) => {
+        res.sendFile(path.join(frontendPath, "index.html"));
     });
 } else {
     app.get("/", (req, res) => {
