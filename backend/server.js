@@ -15,10 +15,6 @@ connectDB();
 
 app.use(express.json());
 
-app.get("/",(req,res)=>{
-    res.send("API is running");
-});
-
 app.use("/api/user",userRoutes);
 
 app.use("/api/chat", chatRoutes);
